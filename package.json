@@ -1,0 +1,47 @@
+{
+  "name": "@brendon1555/panda-cx-deduplicator",
+  "version": "0.1.0",
+  "description": "A drop in replacement for the PandaCSS `cx` function with deduplication of atomic classes",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Brendon Lees <brendon1555@gmail.com>",
+  "keywords": [
+    "panda",
+    "css",
+    "pandacss",
+    "styling",
+    "atomic",
+    "cx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendon1555/panda-cx-deduplicator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brendon1555/panda-cx-deduplicator/issues"
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup src/index.ts --format=esm,cjs --dts",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --check .",
+    "prettier-fix": "prettier --write ."
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@brendon1555/panda-preset-unique-utilities": "^0.1.0",
+    "@pandacss/dev": "^0.15.5"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
