@@ -6,6 +6,9 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "author": "Brendon Lees <brendon1555@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "panda",
     "css",
